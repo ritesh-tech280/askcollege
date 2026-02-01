@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+ 
+html, body {
+       font-family: "Lexend", sans-serif;
+    font-size: 400;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+@media screen and (max-width:900px ){
+  .nav-links {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    transform: translateX(100%);
+
+  }
+}
+
+.sidebar-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  color: black;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.sidebar-dropdown {
+  margin-top: 0.75rem;
+  padding-left: 0.75rem;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.sidebar-dropdown > * + * {
+  margin-top: 0.5rem;
+}
+
+.max-h-60 {
+  max-height: 15rem;  /* Opens the dropdown to ~240px height (adjust if needed) */
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}

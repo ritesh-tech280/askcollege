@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-
- 
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Lexend:wght@420&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 html, body {
        font-family: "Lexend", sans-serif;
     font-size: 400;
@@ -54,3 +52,13 @@ html, body {
 .rotate-180 {
   transform: rotate(180deg);
 }
+
+#collegeContainer {
+  font-family: "Roboto" , sans-serif;
+}
+#regionCollege {
+  font-family: "Roboto" , sans-serif;
+}
+
+ 
+ 

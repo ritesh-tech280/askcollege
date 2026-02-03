@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 
 </head>
 
@@ -159,10 +160,6 @@
 
     </aside>
 
-
-
-
-
     <main>
         <!-- ------------- Hero Section ------------ -->
         <section class="hero bg-[#f0f6ff]  h-[60vh] w-screen flex justify-center items-center place-content-center">
@@ -170,12 +167,7 @@
                 <h1 class="text-2xl   font-bold mb-3">
                     Find Colleges, Courses & Exams that are Best for You
                 </h1>
-
-
-
                 <p class="mb-5">Compare fees, placements, reviews & cutoffs</p>
-
-
                 <div class="input flex items-center rounded-full border  border-blue-500 shadow-lg">
                     <input type="text" placeholder="Search Colleges, Courses, Exams..." class="pl-10 pr-5 py-4 w-full
            rounded-l-full text-gray-800
@@ -230,7 +222,7 @@
 
 
 
-        <section class="tabs-content w-screen">
+        <section class="tabs-content w-screen py-10">
             <!-- =========   MBA  === =  -->
             <section class="tab-panel w-screen p-3 sm:p-5 " data-content="mba">
                 <div
@@ -569,26 +561,27 @@
 
         <!-- Top Colleges  -->
 
-        <section class="w-screen  place-items-start mx-auto bg-[#f0f6ff] py-20 sm:px-20 px-3 space-y-4">
+        <section class="w-screen  place-items-start mx-auto bg-[#f0f6ff] py-10 sm:py-20 sm:px-20 px-3 space-y-4">
             <div class="w-full flex justify-between mx-auto">
                 <span class="text-[14px] p-2 bg-blue-500 text-white rounded-lg">Top Picks</span>
                 <span class="text-blue-600"><a href="">View All <i class="fa-solid fa-chevron-right"></i></a></span>
             </div>
-            <div class="flex items-center justify-center gap-5">
-                <span class="w-10 h-10 place-items-center bg-white rounded-lg">
-                    <img src="./assets/images/university.svg" class="w-8 h-8" alt=""></span>
+            <div class="flex items-start justify-start flex-col gap-1">
                 <h1 class="text-2xl font-bold text-gray-700">Explore Top B.Tech colleges </h1>
+                 <p class="mt-3 text-gray-600 max-w-2xl text-sm sm:text-base">
+    Discover the best engineering institutes across India. Compare NIRF ranks,
+    fees, placements, and courses to choose the right college for you.
+  </p>
             </div>
             <div class="cont w-full md:w-[99%] relative overflow-hidden mx-auto ">
                 <span id="prev"
                     class="px-2 absolute left-1 top-1/2 -translate-y-1/2 z-10 py-1.5 rounded-full bg-[#afcefd] shadow-md transition-all duration-400 hover:scale-130"><i
                         class="fa-solid fa-chevron-left"></i></span>
 
-                <div id="collegeContainer"
-                    class=" flex w-[80%] mx-auto sm:w-full rounded-lg  sm:gap-6 py-10 transition-transform duration-500
+                <div id="collegeContainer" class=" flex w-[80%] mx-auto sm:w-full rounded-lg  sm:gap-6 py-10 transition-transform duration-500
      scroll-smooth overflow-hidden
    ">
-                      
+
                 </div>
                 <span id="next"
                     class="px-2 absolute right-1 top-1/2 -translate-y-1/2 z-10 py-1.5 rounded-full bg-[#afcefd] shadow-md transition-all duration-400 hover:scale-130"><i
@@ -596,8 +589,54 @@
             </div>
         </section>
 
+        <!-- Seearch by Region  -->
+        <section class="w-screen  place-items-start mx-auto px-4  py-20 sm:px-20  space-y-4">
 
+            <div class="flex items-center justify-center gap-5">
+              
+ 
+                <h1 class="text-2xl font-bold text-gray-700">Top Colleges in your region</h1>
+            </div>
+            <p class="text-sm">Discover top colleges and universities across major cities. Select your preferred city to
+                explore educational institutions.</p>
+            <div class="overflow-x-auto max-w-full scroll-smooth snap-x snap-mandatory">
+                <div class="flex flex-nowrap sm:flex-wrap
+      justify-start sm:justify-center
+      gap-4
+      overflow-x-auto sm:overflow-visible
+      text-sm ">
+                    <button id="Allbtn"
+                        class="shrink-0  py-2 px-2.5 text-[12px] rounded-full bg-transparent hover:bg-gray-100 border border-gray-300 hover:border-black">All
+                        India</button>
+                    <button id="Bareillybtn"
+                        class="shrink-0  py-2 px-2.5 text-[12px] rounded-full bg-transparent hover:bg-gray-100 border border-gray-300 hover:border-black">Bareilly</button>
+                    <button id="Meerutbtn"
+                        class="shrink-0  py-2 px-2.5 text-[12px] rounded-full bg-transparent hover:bg-gray-100 border border-gray-300 hover:border-black">Meerut</button>
+                    <button id="Delhibtn"
+                        class="shrink-0  py-2 px-2.5 text-[12px] rounded-full bg-transparent hover:bg-gray-100 border border-gray-300 hover:border-black">Delhi/NCR</button>
+                    <button id="hydrabtn"
+                        class="shrink-0  py-2 px-2.5 text-[12px] rounded-full bg-transparent hover:bg-gray-100 border border-gray-300 hover:border-black">Hyderabad</button>
+                    <button id="chennaibtn"
+                        class="shrink-0  py-2 px-2.5 text-[12px] rounded-full bg-transparent hover:bg-gray-100 border border-gray-300 hover:border-black">Chennai</button>
+                    <button id="Punebtn"
+                        class="shrink-0  py-2 px-2.5 text-[12px] rounded-full bg-transparent hover:bg-gray-100 border border-gray-300 hover:border-black">Pune</button>
+                </div>
+            </div>
+            <div class="cont w-full md:w-[99%] relative overflow-hidden mx-auto ">
+                <span id="prevv"
+                    class="px-2 absolute left-1 top-1/2 -translate-y-1/2 z-10 py-1.5 rounded-full bg-[#afcefd] shadow-md transition-all duration-400 hover:scale-130"><i
+                        class="fa-solid fa-chevron-left"></i></span>
 
+                <div id="regionCollege" class=" flex w-[80%] mx-auto sm:w-full rounded-lg  sm:gap-6 py-10 transition-transform duration-500
+     scroll-smooth overflow-hidden
+   ">
+
+                </div>
+                <span id="nextt"
+                    class="px-2 absolute right-1 top-1/2 -translate-y-1/2 z-10 py-1.5 rounded-full bg-[#afcefd] shadow-md transition-all duration-400 hover:scale-130"><i
+                        class="fa-solid fa-chevron-right"></i></span>
+            </div>
+        </section>
 
 
     </main>
@@ -640,7 +679,7 @@
         </div>
 
         <p class="text-center text-sm mt-10">
-            © 2026 EduFinder. All rights reserved.
+            © 2026 AskCollege. All rights reserved.
         </p>
     </footer> -->
 

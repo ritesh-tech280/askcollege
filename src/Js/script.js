@@ -148,9 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <p class="text-xs font-semibold bg-white text-blue-600 bg-opacity-20 px-2 py-1 rounded-full inline-block mt-1">${college.nirf}</p>
             </div>
             <!-- Subtle star icon for rank emphasis -->
-            <svg class="w-5 h-5 text-yellow-300 absolute top-2 right-2" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-            </svg>
+             
         </div>
         
         <!-- Card Content -->

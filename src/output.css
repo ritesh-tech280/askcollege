@@ -533,6 +533,9 @@
   .snap-mandatory {
     --tw-scroll-snap-strictness: mandatory;
   }
+  .grid-flow-dense {
+    grid-auto-flow: dense;
+  }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -1385,6 +1388,11 @@
       justify-content: center;
     }
   }
+  .sm\:gap-2 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 2);
+    }
+  }
   .sm\:gap-6 {
     @media (width >= 40rem) {
       gap: calc(var(--spacing) * 6);
@@ -1424,6 +1432,11 @@
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
+    }
+  }
+  .md\:grid {
+    @media (width >= 48rem) {
+      display: grid;
     }
   }
   .md\:hidden {
@@ -1470,6 +1483,51 @@
   .lg\:w-1\/3 {
     @media (width >= 64rem) {
       width: calc(1/3 * 100%);
+    }
+  }
+  .lg\:w-30 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 30);
+    }
+  }
+  .lg\:w-\[1\/3\] {
+    @media (width >= 64rem) {
+      width: 1/3;
+    }
+  }
+  .lg\:w-\[30\#\] {
+    @media (width >= 64rem) {
+      width: 30#;
+    }
+  }
+  .lg\:w-\[30\$\] {
+    @media (width >= 64rem) {
+      width: 30$;
+    }
+  }
+  .lg\:w-\[30\%\] {
+    @media (width >= 64rem) {
+      width: 30%;
+    }
+  }
+  .lg\:w-\[30\] {
+    @media (width >= 64rem) {
+      width: 30;
+    }
+  }
+  .lg\:w-\[31\.5\%\] {
+    @media (width >= 64rem) {
+      width: 31.5%;
+    }
+  }
+  .lg\:w-\[32\%\] {
+    @media (width >= 64rem) {
+      width: 32%;
+    }
+  }
+  .lg\:w-\[32\.5\%\] {
+    @media (width >= 64rem) {
+      width: 32.5%;
     }
   }
   .lg\:grid-cols-3 {

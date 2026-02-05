@@ -138,9 +138,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     container.innerHTML += `
 
-<div class="max-w-xs slide w-full shrink-0   sm:w-1/2 lg:w-1/3 xl:w-1/4 mx-auto bg-white  rounded-2xl overflow-hidden border border-gray-200   transition-all duration-300 transform">
+<div class="max-w-xs slide w-full shrink-0   sm:w-1/2 lg:w-1/3 xl:w-1/4 mx-auto bg-white  rounded-2xl overflow-hidden border border-gray-200   transition-all duration-500 transform">
         <!-- Header with Logo and Basic Info -->
-        <div class="flex items-center p-4 bg-gradient-to-r from-indigo-500 to-purple-600 text-white relative">
+        <div class="flex items-center p-4 bg-linear-to-r from-indigo-500 to-purple-600 text-white relative">
             <img class="w-12 h-12 rounded-full mr-3 border-2 border-white shadow-sm" src=${college.logo} alt="Harvard University Logo">
             <div class="flex-1">
                 <h2 class="text-lg font-bold leading-tight">${college.name} </h2>
@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
             
             <!-- Action Button -->
-            <button class="w-full bg-gradient-to-r from-blue-500 to-teal-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-3 px-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center space-x-2 group">
+            <button class="w-full bg-linear-to-r from-blue-500 to-teal-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-3 px-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center space-x-2 group">
                 <svg class="w-5 h-5 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                 </svg>
@@ -214,16 +214,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   next.onclick = () => {
-
+    prev.classList.remove("hidden")
     const totalSlides = Math.ceil(container.children.length / perView);
-
     if (index < totalSlides - 1) index++;
     updateSlider();
+    console.log("Next was Clicked")
   };
 
   prev.onclick = () => {
     if (index > 0) index--;
     updateSlider();
+    console.log("Prev was Clicked")
   };
 
   window.addEventListener("resize", () => {
@@ -279,7 +280,7 @@ document.addEventListener("DOMContentLoaded", function () {
   regionColleges.forEach(college => {
 
     regionCollege.innerHTML += `
- <div class="bg-white  shrink-0 md:w-80  slidee w-80 rounded-2xl border  border-gray-300  overflow-hidden   transition duration-300 pt-2  m-auto mt-8">
+ <div class="bg-white  shrink-0 md:w-80  slidee w-80 rounded-2xl border  border-gray-300  overflow-hidden   transition duration-500 pt-2  m-auto mt-8">
 
     <!-- Image Section -->
     <div class="relative">
@@ -338,47 +339,76 @@ school
     </div>
   </div>
 
- `
+ `   })
 
-    const nextt = document.getElementById("nextt");
-    const prevv = document.getElementById("prevv");
-    const slideWidthh = document.querySelectorAll(".slidee");
+ const slides = document.querySelectorAll(".slidee");
+ const prevv = document.getElementById("prevv")
+ const nextt = document.getElementById("nextt");
+ 
+ let count = 0 ;
+ slides.forEach((slide, index) => {
+  slide.style.left = `${index * 100}`;
+ })
 
-
-    let index = 0;
-
-    function cardsPerView() {
-      if (window.innerWidth >= 1024) return 3;
-      if (window.innerWidth >= 768) return 2;
-      return 1;
-    }
-
-    const perView = cardsPerView();
-    function updateSlider() {
-      slideWidthh.forEach((slidee) => {
-        slidee.style.transform = `translateX(-${index * 100}%)`;
-      })
-    }
-
-    nextt.onclick = () => {
-
-      const totalSlides = Math.ceil(regionCollege.children.length / perView);
-
-      if (index < totalSlides - 1) index++;
-      updateSlider();
-    };
+   const goNext = () => {
+   count = (count + 1) % slides.length;
+    slideCard() ;
+   }
+   const giPrev = () => {
+    count = (count - 1 + slides.length) % slides.length;
+    slideCard();
+   }
 
     prevv.onclick = () => {
-      if (index > 0) index--;
-      updateSlider();
-    };
+      giPrev()
+    }
+    nextt.onclick = () => {
+      prevv.classList.remove("hidden")
+     goNext()
+    }
 
-    window.addEventListener("resize", () => {
-      index = 0;
-      updateSlider();
-    });
-
+ const slideCard = () => {
+  slides.forEach((slide) => {
+    slide.style.transform = `translateX(-${count * 100}%)`;
   })
+ }
+ 
+ const cards = document.querySelectorAll(".card");
+const leftbtn = document.getElementById("leftbtn");
+const rightbtn = document.getElementById("rightbtn");
+ 
+
+let counter = 0;
+
+cards.forEach((card, index) => {
+  card.style.left = `${index * 100}%`;
+});
+
+const slideCards = () => {
+  cards.forEach((card) => {
+    card.style.transform = `translateX(-${counter * 100}%)`;
+  });
+};
+
+const goRight = () => {
+  counter = (counter + 1) % cards.length;   // 🔥 loop forward
+  slideCards();
+};
+
+const goLeft = () => {
+  counter = (counter - 1 + cards.length) % cards.length; // 🔥 loop backward
+  slideCards();
+};
+
+rightbtn.onclick = () => {
+leftbtn.classList.remove("hidden")
+goRight();
+} 
+leftbtn.onclick = goLeft;
+
+   
+  
+
 });
 
 

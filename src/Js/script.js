@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="flex items-center p-4 bg-linear-to-r from-indigo-500 to-purple-600 text-white relative">
             <img class="w-12 h-12 rounded-full mr-3 border-2 border-white shadow-sm" src=${college.logo} alt="Harvard University Logo">
             <div class="flex-1">
-                <h2 class="text-lg font-bold leading-tight">${college.name} </h2>
+                <h2 class="text-[16px] font-bold leading-tight">${college.name} </h2>
                 <p class="text-sm opacity-90">${college.location} </p>
                 <p class="text-xs font-semibold bg-white text-blue-600 bg-opacity-20 px-2 py-1 rounded-full inline-block mt-1">${college.nirf}</p>
             </div>
@@ -299,7 +299,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="p-5 space-y-3">
 
       <!-- College Name -->
-      <h2 class="text-lg font-bold text-gray-800">
+      <h2 class="text-[16px] line-clamp-1 font-bold text-gray-800">
         ${college.name}
       </h2>
 
@@ -406,8 +406,40 @@ goRight();
 } 
 leftbtn.onclick = goLeft;
 
-   
-  
+
+ const cads = document.querySelectorAll(".cad");
+const left = document.getElementById("left");
+const right = document.getElementById("right");
+ 
+
+let counte = 0;
+
+cads.forEach((cad, indexx) => {
+  cad.style.left = `${indexx * 100}%`;
+});
+
+const slideCads = () => {
+  cads.forEach((cad) => {
+    cad.style.transform = `translateX(-${counte * 100}%)`;
+  });
+};
+
+const goRightt = () => {
+  counte = (counte + 1) % cads.length;   // 🔥 loop forward
+  slideCads();
+};
+
+const goLeftt = () => {
+  counte = (counte - 1 + cads.length) % cads.length; // 🔥 loop backward
+  slideCads();
+};
+
+right.onclick = () => {
+left.classList.remove("hidden")
+goRightt();
+} 
+left.onclick = goLeftt;
+
 
 });
 

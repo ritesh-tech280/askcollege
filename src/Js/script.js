@@ -2,11 +2,31 @@
 document.addEventListener("DOMContentLoaded", function () {
 
 
+   const loginModel = document.getElementById("loginModal");
+  const signUpBtn = document.getElementById("signUp");
+  const loginUp = document.getElementById("loginUp");
+  const closeModel = document.getElementById("closeModel") ;
+  console.log(loginModel , signUpBtn , closeModel)
+
+  signUpBtn.addEventListener("click" , () => {
+    loginModel.classList.remove("hidden");
+    document.body.classList.add("overflow-hidden");
+  })
+  closeModel.addEventListener("click" , () => {
+    loginModel.classList.add("hidden");
+    document.body.classList.remove("overflow-hidden")
+  })
+
+  loginUp.addEventListener("click", () => {
+      loginModel.classList.remove("hidden");
+    document.body.classList.add("overflow-hidden");
+  })
+
+
 
   const menuBtn = document.getElementById("menuBtn");
   const closeBtn = document.getElementById("closeBtn");
   const sidebar = document.getElementById("sidebar");
-  const overlay = document.getElementById("overlay");
 
   menuBtn.addEventListener("click", () => {
     sidebar.classList.remove("-translate-x-full");
@@ -52,38 +72,36 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // const tabs = document.querySelectorAll(".tab-btn");
-  // const panels = document.querySelectorAll(".tab-panel");
+  const sidebarWithLogin = document.getElementById("sidebarWithLogin");
+  const signUpMobile = document.getElementById("signUpMobile");
+    const loginMobile = document.getElementById("loginMobile");
+  const closeBtnMobile = document.getElementById("closeBtnMobile");
 
-  // tabs.forEach(tab => {
-  //   tab.addEventListener("click", function () {
+   signUpMobile.addEventListener("click", () => {
+    sidebarWithLogin.classList.remove("-translate-x-full");
+    document.body.classList.add("overflow-hidden")
+  });
 
-  //     const target = this.dataset.tab;
+  closeBtnMobile.addEventListener("click", closeSidebarMobile);
+  loginMobile.addEventListener("click" , () => {
+      sidebarWithLogin.classList.remove("-translate-x-full");
+    document.body.classList.add("overflow-hidden")
+  })
 
-  //     // 👉 Reset tabs styles
-  //     tabs.forEach(t => {
-  //       t.classList.remove("border-blue-600", "text-blue-600");
-  //       t.classList.add("border-transparent", "text-gray-700");
-  //     });
+  function closeSidebarMobile() {
+    sidebarWithLogin.classList.add("-translate-x-full");
+    document.body.classList.remove("overflow-hidden")
 
-  //     // 👉 Active tab style
-  //     this.classList.remove("border-transparent", "text-gray-700");
-  //     this.classList.add("border-blue-600", "text-blue-600");
+  }
 
-  //     // 👉 Hide all panels
-  //     panels.forEach(panel => {
-  //       panel.classList.add("hidden");
-  //     });
-
-
-  //     // 👉 Show correct panel
-  //     document.querySelector(`.tab-panel[data-content="${target}"]`).classList.remove("hidden");
-
-  //   });
-  // });
+  
 
 
 
+
+   
+
+ 
   const colleges = [{
     name: "IIT Bombay - Indian Institute of Technology",
     location: "Mumbai",
@@ -280,7 +298,7 @@ document.addEventListener("DOMContentLoaded", function () {
   regionColleges.forEach(college => {
 
     regionCollege.innerHTML += `
- <div class="bg-white  shrink-0 md:w-80  slidee w-80 rounded-2xl border  border-gray-300  overflow-hidden   transition duration-500 pt-2  m-auto mt-8">
+ <div class="bg-white   shrink-0 md:w-80  slidee w-80 rounded-2xl border  border-gray-300  overflow-hidden   transition duration-500 hover:-translate-y-1 pt-2  m-auto mt-8">
 
     <!-- Image Section -->
     <div class="relative">

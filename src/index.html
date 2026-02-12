@@ -27,7 +27,7 @@
                 </button>
 
                 <!-- Logo -->
-                <h1 class="text-3xl font-bold text-blue-600">AskCollege</h1>
+                <h1 class="text-2xl font-extrabold text-blue-600">AskCollege</h1>
             </div>
 
             <!-- Desktop Menu -->
@@ -40,8 +40,8 @@
 
             <!-- Buttons -->
             <div class="hidden md:flex gap-2">
-                <button class="p-2 text-sm text-blue-500 hover:underline">Login</button>
-                <button
+                <button id="loginUp" class="p-2 text-sm text-blue-500 hover:underline">Login</button>
+                <button id="signUp"
                     class="p-2 text-sm font-bold border-2 border-blue-500 text-blue-600 rounded-lg hover:bg-blue-50">
                     Join for Free
                 </button>
@@ -50,8 +50,7 @@
         </nav>
     </header>
 
-    <!-- Overlay -->
-    <!-- <div id="overlay" class="fixed inset-0 bg-black/40 hidden z-40"></div> -->
+   
 
     <!-- Sidebar -->
     <aside id="sidebar" class="fixed top-0 left-0 h-full overflow-hidden w-screen bg-white shadow-xl
@@ -59,7 +58,7 @@
 
         <!-- Sidebar Header -->
         <div class="h-16 flex items-center justify-between px-4 border-b  border-[#deeafc]">
-            <h2 class="text-2xl font-bold text-blue-600">AskCollege</h2>
+            <h2 class="text-2xl font-extrabold text-blue-600">AskCollege</h2>
             <button id="closeBtn" class="text-xl text-[#6b7280]">
                 <i class="fa-solid fa-xmark"></i>
             </button>
@@ -151,14 +150,195 @@
             </div>
         </nav>
         <div class="flex fixed bottom-0 gap-3 flex-col items-center justify-center w-screen h-44 bg-[#f0f6ff]">
-            <button class="p-2 py-3 w-[80%] text-sm font-bold    bg-blue-600 text-white rounded-lg hover:bg-blue-50">
+            <button id="signUpMobile" class="p-2 py-3 w-[80%] text-sm font-bold    bg-blue-600 text-white rounded-lg hover:bg-blue-50">
                 Join for Free
             </button>
-            <button
+            <button id="loginMobile"
                 class="p-2 py-3 w-[80%] text-sm border bg-white border-blue-500 text-blue-500 rounded-lg">Login</button>
         </div>
 
     </aside>
+
+
+       <aside id="sidebarWithLogin" class="fixed top-0 left-0 h-full overflow-hidden w-screen bg-white shadow-xl
+  transform -translate-x-full transition-transform duration-300 z-50">
+
+        <!-- Sidebar Header -->
+        <div class="h-16 flex items-center justify-end px-4 border-b  border-[#deeafc]">
+            <h2 class="text-2xl  w-1/2 ml-7 mx-auto font-extrabold text-blue-600">AskCollege</h2>
+            <button id="closeBtnMobile" class="text-xl text-[#6b7280]">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+           <div id="loginModalPhone" class="fixed    flex items-center justify-center z-50">
+
+  <!-- Modal -->
+  <div class="bg-white w-[95%] max-w-md p-8 relative">
+
+ 
+   
+
+    <!-- Title -->
+    <h2 class="text-[18px] font-semibold mb-2">
+      Log in or create account
+    </h2>
+
+    <p class="text-gray-500 text-sm mb-6">
+      Learn on your own time from top universities and colleges.
+    </p>
+
+    <!-- Email Input -->
+    <label class="block text-sm font-medium mb-2">
+      Email <span class="text-red-500">*</span>
+    </label>
+
+    <input
+      type="email"
+      placeholder="name@email.com"
+      class="w-full border border-blue-300 rounded-lg px-4 text-[14px] py-3 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-600"
+    />
+
+    <!-- Continue Button -->
+    <button class="w-full bg-blue-700 text-[13px] hover:bg-blue-800 text-white font-medium py-3 rounded-lg transition mb-5">
+      Continue
+    </button>
+
+    <!-- Divider -->
+    <div class="flex items-center my-4">
+      <hr class="grow border-gray-300">
+      <span class="px-3 text-gray-400 text-sm">or</span>
+      <hr class="grow border-gray-300">
+    </div>
+
+    <!-- Social Buttons -->
+    <div class="space-y-3">
+
+      <button class="w-full border rounded-lg py-3 pl-5 pr-10
+        flex items-center justify-between
+       gap-3 hover:bg-gray-50">
+        <img src="https://www.svgrepo.com/show/475656/google-color.svg" class="w-5 h-5">
+       <span class="max-w-1/2 mx-auto text-[13px] font-medium "> Continue with Google </span>
+      </button>
+
+      <button class="w-full border rounded-lg py-3 pl-5 pr-10 flex items-center justify-between gap-3 hover:bg-gray-50">
+        <img src="https://www.svgrepo.com/show/475647/facebook-color.svg" class="w-5 h-5">
+       <span class="max-w-3/4 mx-auto text-[13px] font-medium"> Continue with Facebook </span>
+      </button>
+
+     <button class="w-full border rounded-lg py-3 pl-5 pr-10 flex items-center justify-between gap-3 hover:bg-gray-50">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" class="w-5 h-5">
+       <span class="max-w-3/4 mx-auto text-[13px] font-medium"> Continue with Apple</span>
+      </button>
+
+    </div>
+
+    <!-- Organization Link -->
+    <p class="text-left mt-5">
+      <a href="#" class="text-blue-600 text-[13px]  underline">
+        Sign up with your organization
+      </a>
+    </p>
+
+    <!-- Footer text -->
+    <p class="text-xs text-gray-500 mt-6 leading-relaxed">
+      I accept AskCollege's <span class="underline">Terms of Use</span> and
+      <span class="underline">Privacy Notice</span>.
+    </p>
+
+  </div>
+</div>
+                  
+      
+
+    </aside>
+
+
+
+
+
+               <!----------------- Login Section ------------------  -->
+               <!-- Overlay -->
+<div id="loginModal" class="fixed hidden  inset-0 bg-black/40 flex items-center justify-center z-50">
+
+  <!-- Modal -->
+  <div class="bg-white w-[95%] max-w-md rounded-2xl shadow-2xl p-8 relative">
+
+    <!-- Close Button -->
+    <button id="closeModel" class="absolute top-4 right-4 text-gray-500 hover:text-black text-xl">
+      ✕
+    </button>
+
+    <!-- Title -->
+    <h2 class="text-2xl font-semibold mb-2">
+      Log in or create account
+    </h2>
+
+    <p class="text-gray-500 text-sm mb-6">
+      Learn on your own time from top universities and colleges.
+    </p>
+
+    <!-- Email Input -->
+    <label class="block text-sm font-medium mb-2">
+      Email <span class="text-red-500">*</span>
+    </label>
+
+    <input
+      type="email"
+      placeholder="name@email.com"
+      class="w-full border border-blue-300 rounded-lg px-4 text-[14px] py-3 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-600"
+    />
+
+    <!-- Continue Button -->
+    <button class="w-full bg-blue-700 text-[13px] hover:bg-blue-800 text-white font-medium py-3 rounded-lg transition mb-5">
+      Continue
+    </button>
+
+    <!-- Divider -->
+    <div class="flex items-center my-4">
+      <hr class="grow border-gray-300">
+      <span class="px-3 text-gray-400 text-sm">or</span>
+      <hr class="grow border-gray-300">
+    </div>
+
+    <!-- Social Buttons -->
+    <div class="space-y-3">
+
+      <button class="w-full border rounded-lg py-3 pl-5 pr-10
+        flex items-center justify-between
+       gap-3 hover:bg-gray-50">
+        <img src="https://www.svgrepo.com/show/475656/google-color.svg" class="w-5 h-5">
+       <span class="max-w-1/2 mx-auto text-[13px] font-medium "> Continue with Google </span>
+      </button>
+
+      <button class="w-full border rounded-lg py-3 pl-5 pr-10 flex items-center justify-between gap-3 hover:bg-gray-50">
+        <img src="https://www.svgrepo.com/show/475647/facebook-color.svg" class="w-5 h-5">
+       <span class="max-w-3/4 mx-auto text-[13px] font-medium"> Continue with Facebook </span>
+      </button>
+
+     <button class="w-full border rounded-lg py-3 pl-5 pr-10 flex items-center justify-between gap-3 hover:bg-gray-50">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" class="w-5 h-5">
+       <span class="max-w-3/4 mx-auto text-[13px] font-medium"> Continue with Apple</span>
+      </button>
+
+    </div>
+
+    <!-- Organization Link -->
+    <p class="text-left mt-5">
+      <a href="#" class="text-blue-600 text-[13px]  underline">
+        Sign up with your organization
+      </a>
+    </p>
+
+    <!-- Footer text -->
+    <p class="text-xs text-gray-500 mt-6 leading-relaxed">
+      I accept AskCollege's <span class="underline">Terms of Use</span> and
+      <span class="underline">Privacy Notice</span>.
+    </p>
+
+  </div>
+</div>
+
 
     <main>
         <!-- ------------- Hero Section ------------ -->
@@ -187,10 +367,9 @@
         <section class="tabs-content w-screen py-10">
             <!-- =========   MBA  === =  -->
             <section class="tab-panel w-screen p-3 sm:p-5 " data-content="mba">
-                <div
-                    class="tab mt-6 w-4/5 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center justify-around flex-wrap gap-4 sm:gap-6 place-items-center">
+                <div class="tab mt-6 w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 items-center justify-around flex-wrap gap-4 sm:gap-6 place-items-center">
                     <div class="min-h-72 sm:min-h-80 w-72 sm:w-64 bg-blue-50 rounded-xl
-         flex flex-col items-center justify-center text-center
+         flex flex-col items-center justify-center text-center shadow-md
          p-6 space-y-4
          transition-all duration-300 ease-in-out
          hover:bg-blue-700 hover:scale-102 hover:shadow-xl
@@ -220,7 +399,7 @@
                     </div>
                     <div class="min-h-72 sm:min-h-80 w-72 sm:w-64 bg-blue-50 rounded-xl
          flex flex-col items-center justify-center text-center
-         p-6 space-y-4
+         p-6 space-y-4 shadow-md
          transition-all duration-300 ease-in-out
          hover:bg-blue-700 hover:scale-102 hover:shadow-xl
          group cursor-pointer">
@@ -248,7 +427,7 @@
                     </div>
                     <div class="min-h-72 sm:min-h-80 w-72 sm:w-64 bg-blue-50 rounded-xl
          flex flex-col items-center justify-center text-center
-         p-6 space-y-4
+         p-6 space-y-4 shadow-md
          transition-all duration-300 ease-in-out
          hover:bg-blue-700 hover:scale-102 hover:shadow-xl
          group cursor-pointer">
@@ -276,7 +455,7 @@
                     </div>
                     <div class="min-h-72 sm:min-h-80 w-72 sm:w-64 bg-blue-50 rounded-xl
          flex flex-col items-center justify-center text-center
-         p-6 space-y-4
+         p-6 space-y-4 shadow-md
          transition-all duration-300 ease-in-out
          hover:bg-blue-700 hover:scale-102 hover:shadow-xl
          group cursor-pointer">
@@ -305,7 +484,7 @@
                     </div>
                     <div class="min-h-72 sm:min-h-80 w-72 sm:w-64 bg-blue-50 rounded-xl
          flex flex-col items-center justify-center text-center
-         p-6 space-y-4
+         p-6 space-y-4 shadow-md
          transition-all duration-300 ease-in-out
          hover:bg-blue-700 hover:scale-102 hover:shadow-xl
          group cursor-pointer">

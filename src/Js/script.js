@@ -52,35 +52,35 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  const tabs = document.querySelectorAll(".tab-btn");
-  const panels = document.querySelectorAll(".tab-panel");
+  // const tabs = document.querySelectorAll(".tab-btn");
+  // const panels = document.querySelectorAll(".tab-panel");
 
-  tabs.forEach(tab => {
-    tab.addEventListener("click", function () {
+  // tabs.forEach(tab => {
+  //   tab.addEventListener("click", function () {
 
-      const target = this.dataset.tab;
+  //     const target = this.dataset.tab;
 
-      // 👉 Reset tabs styles
-      tabs.forEach(t => {
-        t.classList.remove("border-blue-600", "text-blue-600");
-        t.classList.add("border-transparent", "text-gray-700");
-      });
+  //     // 👉 Reset tabs styles
+  //     tabs.forEach(t => {
+  //       t.classList.remove("border-blue-600", "text-blue-600");
+  //       t.classList.add("border-transparent", "text-gray-700");
+  //     });
 
-      // 👉 Active tab style
-      this.classList.remove("border-transparent", "text-gray-700");
-      this.classList.add("border-blue-600", "text-blue-600");
+  //     // 👉 Active tab style
+  //     this.classList.remove("border-transparent", "text-gray-700");
+  //     this.classList.add("border-blue-600", "text-blue-600");
 
-      // 👉 Hide all panels
-      panels.forEach(panel => {
-        panel.classList.add("hidden");
-      });
+  //     // 👉 Hide all panels
+  //     panels.forEach(panel => {
+  //       panel.classList.add("hidden");
+  //     });
 
 
-      // 👉 Show correct panel
-      document.querySelector(`.tab-panel[data-content="${target}"]`).classList.remove("hidden");
+  //     // 👉 Show correct panel
+  //     document.querySelector(`.tab-panel[data-content="${target}"]`).classList.remove("hidden");
 
-    });
-  });
+  //   });
+  // });
 
 
 

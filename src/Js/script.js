@@ -93,14 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.remove("overflow-hidden")
 
   }
-
-  
-
-
-
-
-   
-
+ 
  
   const colleges = [{
     name: "IIT Bombay - Indian Institute of Technology",
@@ -112,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
     exams: "JEE Main, JEE Advanced",
     fees: "₹8 L",
     salary: "₹17.92 - 19.63 LPA",
-    logo: "https://upload.wikimedia.org/wikipedia/en/1/1d/Indian_Institute_of_Technology_Bombay_Logo.svg"
+    logo: "./assets/images/Indian_Institute_of_Technology_Bombay_Logo.webp"
   }, {
     name: "IIT Delhi - Indian Institute of Technology",
     location: "New Delhi",
@@ -123,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
     exams: "JEE Main, JEE Advanced",
     fees: "₹8 L",
     salary: "₹18 - 20 LPA",
-    logo: "https://upload.wikimedia.org/wikipedia/en/f/fd/Indian_Institute_of_Technology_Delhi_Logo.svg"
+    logo: "./assets/images/Indian_Institute_of_Technology_Delhi_Logo.webp"
   },
   {
     name: "IIT Madras - Indian Institute of Technology",
@@ -135,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
     exams: "JEE Main, JEE Advanced",
     fees: "₹8.2 L",
     salary: "₹19 - 21 LPA",
-    logo: "https://upload.wikimedia.org/wikipedia/en/6/69/IIT_Madras_Logo.svg"
+    logo: "./assets/images/IIT_Madras_Logo.webp"
   },
   {
     name: "IIT Kanpur - Indian Institute of Technology",
@@ -147,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
     exams: "JEE Main, JEE Advanced",
     fees: "₹8 L",
     salary: "₹17.5 - 19 LPA",
-    logo: "https://upload.wikimedia.org/wikipedia/hi/f/f3/Iitk-logo.jpg"
+    logo: "./assets/images/indian-institute-of-technology-kanpur-log.webp"
   }];
 
   const container = document.getElementById("collegeContainer");
@@ -251,7 +244,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const regionColleges = [{
-    image: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Invertis_University_gate_01.jpg",
+    image: "./assets/images/Invertis_University_gate.webp",
     rating: 4.5,
     name: "Invertis University",
     region: "Bareilly",
@@ -261,8 +254,8 @@ document.addEventListener("DOMContentLoaded", function () {
     fees: 3.00
   },
   {
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/81/M.J.P._Rohilkhand_University%2C_Administrative_Block.JPG",
-    rating: 3.3,
+    image: "./assets/images/M.J.P._Rohilkhand_University.webp",
+    rating: 3.3, 
     name: "Mahatma Jyotiba Phule Rohilkhand University",
     region: "Bareilly",
     nirf: "201-300 NIRF",
@@ -271,7 +264,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fees: 1.65
   },
   {
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Shri_Ram_Murti_Smarak_College_of_Engineering%2C_Technology_%26_Research%2C_Bareilly.jpeg",
+    image: "./assets/images/Shri_Ram_Murti_Smarak_College_of_Engineering%2C_Technology_%26_Research%2C_Bareilly.webp",
     rating: 3.4,
     name: "Shri Ram Murti Smarak College of Engineering and Technology",
     region: "Bareilly",
@@ -281,7 +274,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fees: 2.98
   },
   {
-    image: "https://cdn.prod.website-files.com/66aca13f24279ac628932e6e/66aca13f24279ac628933460_Mask%20group%20(5).jpg",
+    image: "./assets/images/RBMi.webp",
     rating: 4.3,
     name: "RBMI Group of Institution Bareilly",
     region: "Bareilly",

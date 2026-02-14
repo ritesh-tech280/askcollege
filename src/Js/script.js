@@ -2,23 +2,23 @@
 document.addEventListener("DOMContentLoaded", function () {
 
 
-   const loginModel = document.getElementById("loginModal");
+  const loginModel = document.getElementById("loginModal");
   const signUpBtn = document.getElementById("signUp");
   const loginUp = document.getElementById("loginUp");
-  const closeModel = document.getElementById("closeModel") ;
-  console.log(loginModel , signUpBtn , closeModel)
+  const closeModel = document.getElementById("closeModel");
+  console.log(loginModel, signUpBtn, closeModel)
 
-  signUpBtn.addEventListener("click" , () => {
+  signUpBtn.addEventListener("click", () => {
     loginModel.classList.remove("hidden");
     document.body.classList.add("overflow-hidden");
   })
-  closeModel.addEventListener("click" , () => {
+  closeModel.addEventListener("click", () => {
     loginModel.classList.add("hidden");
     document.body.classList.remove("overflow-hidden")
   })
 
   loginUp.addEventListener("click", () => {
-      loginModel.classList.remove("hidden");
+    loginModel.classList.remove("hidden");
     document.body.classList.add("overflow-hidden");
   })
 
@@ -74,17 +74,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const sidebarWithLogin = document.getElementById("sidebarWithLogin");
   const signUpMobile = document.getElementById("signUpMobile");
-    const loginMobile = document.getElementById("loginMobile");
+  const loginMobile = document.getElementById("loginMobile");
   const closeBtnMobile = document.getElementById("closeBtnMobile");
 
-   signUpMobile.addEventListener("click", () => {
+  signUpMobile.addEventListener("click", () => {
     sidebarWithLogin.classList.remove("-translate-x-full");
     document.body.classList.add("overflow-hidden")
   });
 
   closeBtnMobile.addEventListener("click", closeSidebarMobile);
-  loginMobile.addEventListener("click" , () => {
-      sidebarWithLogin.classList.remove("-translate-x-full");
+  loginMobile.addEventListener("click", () => {
+    sidebarWithLogin.classList.remove("-translate-x-full");
     document.body.classList.add("overflow-hidden")
   })
 
@@ -93,8 +93,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.remove("overflow-hidden")
 
   }
- 
- 
+
+
   const colleges = [{
     name: "IIT Bombay - Indian Institute of Technology",
     location: "Mumbai",
@@ -255,7 +255,7 @@ document.addEventListener("DOMContentLoaded", function () {
   },
   {
     image: "./assets/images/M.J.P._Rohilkhand_University.webp",
-    rating: 3.3, 
+    rating: 3.3,
     name: "Mahatma Jyotiba Phule Rohilkhand University",
     region: "Bareilly",
     nirf: "201-300 NIRF",
@@ -282,21 +282,188 @@ document.addEventListener("DOMContentLoaded", function () {
     type: "Private College",
     course: "7",
     fees: 2.00
-  }]
+  },
+  {
+    image: "./assets/images/Amity1.webp",
+    rating: 3.8,
+    name: "Amity University, Noida",
+    region: "Noida",
+    nirf: "#37 NIRF",
+    type: "Private University",
+    course: "27",
+    fees: 9.08
+  },
+  {
+    image: "./assets/images/IIT Delhi.webp",
+    rating: 4.5,
+    name: "IIT Delhi - Indian Institute of Technology",
+    region: "Delhi",
+    nirf: "#2 NIRF",
+    type: "Government College",
+    course: "17",
+    fees: 8.00
+  },
+  {
+    image: "./assets/images/DTU.webp",
+    rating: 4.3,
+    name: "DTU - Delhi Technological University ",
+    region: "Delhi",
+    nirf: "#30 NIRF",
+    type: "Private College",
+    course: "20",
+    fees: 5.32
+  },
+  {
+    image: "./assets/images/NSTU.webp",
+    rating: 4.1,
+    name: "Netaji Subhas University of Technology",
+    region: "Delhi",
+    nirf: "#70 NIRF",
+    type: "Private University",
+    course: "12",
+    fees: 3.95
+  } ,
+  {
+    image: "./assets/images/why-shobhit.webp",
+    rating: 3.8,
+    name: "Shobhit Institute of Engineering and Technology",
+    region: "Meerut",
+    nirf: "#25 Times",
+    type: "Private University",
+    course: "5",
+    fees: 3.00
+  } ,
+  {
+    image: "./assets/images/MIET.webp",
+    rating: 4.1,
+    name: "Meerut Institute of Engineering and Technology",
+    region: "Meerut",
+    nirf: "#248 India Today",
+    type: "Private University",
+    course: "16",
+    fees: 3.06
+  },
+  {
+    image: "./assets/images/iimt-university.webp",
+    rating: 3.6,
+    name: "IIMT University",
+    region: "Meerut",
+    nirf: " ",
+    type: "Private University",
+    course: "14",
+    fees: 1.65
+  },
+  {
+    image: "./assets/images/swami-vivekanand-subharti-university-campus.webp",
+    rating: 3.8,
+    name: "SVSU - Swami Vivekanand Subharti University ",
+    region: "Meerut",
+    nirf: "#121 Times",
+    type: "Private University",
+    course: "20",
+    fees: 2.22
+  },
+  {
+    image: "./assets/images/UPES.webp",
+    rating: 4.4,
+    name: "UPES ",
+    region: "Dehradun",
+    nirf: "#49 NIRF",
+    type: "Private University",
+    course: "10",
+    fees: "1.75 - 5.74"
+  } ,
+  {
+    image: "./assets/images/Uttranchal_University.webp",
+    rating: 4.0
+    ,
+    name: "Uttranchal University",
+    region: "Dehradun",
+    nirf: "#27 India Today",
+    type: "Private University",
+    course: "27",
+    fees: "1.38 - 5.3"
+  } ,
+  {
+    image: "./assets/images/Doon.webp",
+    rating: 3.9,
+    name: "Doon University",
+    region: "Dehradun",
+    nirf: "-",
+    type: "Private University",
+    course: "17",
+    fees: "40K - 1.12"
+  },
+  {
+    image: "./assets/images/ssrg.webp",
+    rating: 4.2,
+    name: "Shri Guru Ram Rai University Dehradun",
+    region: "Dehradun",
+    nirf: "-",
+    type: "Private University",
+    course: "52",
+    fees: "37.95 K - 4.67 "
+  },
+  {
+    image: "./assets/images/iit_hyderabad_facebook_1.webp",
+    rating: 4.4,
+    name: "IIT Hyderabad - Indian Institute of Technology",
+    region: "Hyderabad",
+    nirf: "#9 NIRF",
+    type: "Government Institute",
+    course: "79",
+    fees: "24 K - 8"
+  },
+  {
+    image: "./assets/images/Hydrabad.webp",
+    rating: 4.3,
+    name: "International Institute of Information Technology, Hyderabad",
+    region: "Gachibowli",
+    nirf: "#9 NIRF",
+    type: "Private Institute",
+    course: "41",
+    fees: "1.2L - 18"
+  },
+  {
+    image: "./assets/images/UoH.webp",
+    rating: 4.3,
+    name: "UoH - University of Hyderabad ",
+    region: "Gachibowli",
+    nirf: "#9 NIRF",
+    type: "Government Institute",
+    course: "109",
+    fees: "9.6 K - 4.69"
+  },
+  {
+    image: "./assets/images/UoH.webp",
+    rating: 4.3,
+    name: "UoH - University of Hyderabad ",
+    region: "Gachibowli",
+    nirf: "#9 NIRF",
+    type: "Government Institute",
+    course: "109",
+    fees: "9.6 K - 4.69"
+  }
+
+
+
+  ]
 
   const regionCollege = document.getElementById("regionCollege");
-  regionCollege.innerHTML = "";
+
+  function renderColleges(data) {
+    regionCollege.innerHTML = "";
 
 
-  regionColleges.forEach(college => {
+    data.forEach(college => {
 
-    regionCollege.innerHTML += `
+      regionCollege.innerHTML += `
  <div class="bg-white   shrink-0 md:w-80  slidee w-80 rounded-2xl border  border-gray-300  overflow-hidden   transition duration-500 hover:-translate-y-1 pt-2  m-auto mt-8">
 
     <!-- Image Section -->
     <div class="relative">
       <img 
-        src=${college.image}
+        src="${college.image}"
         class="w-76 mx-auto h-40 rounded-lg object-cover"
       />
 
@@ -342,7 +509,7 @@ school
 
       <!-- Button -->
       <div class="flex justify-center pt-3">
-        <button class="bg-blue-600 w-100 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+        <button onclick=alert("working") class="bg-blue-600 w-100 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
           View Details
         </button>
       </div>
@@ -351,108 +518,156 @@ school
   </div>
 
  `   })
-
- const slides = document.querySelectorAll(".slidee");
- const prevv = document.getElementById("prevv")
- const nextt = document.getElementById("nextt");
- 
- let count = 0 ;
- slides.forEach((slide, index) => {
-  slide.style.left = `${index * 100}`;
- })
-
-   const goNext = () => {
-   count = (count + 1) % slides.length;
-    slideCard() ;
-   }
-   const giPrev = () => {
-    count = (count - 1 + slides.length) % slides.length;
-    slideCard();
-   }
-
-    prevv.onclick = () => {
-      giPrev()
-    }
-    nextt.onclick = () => {
-      prevv.classList.remove("hidden")
-     goNext()
+ initSlider();
     }
 
- const slideCard = () => {
-  slides.forEach((slide) => {
-    slide.style.transform = `translateX(-${count * 100}%)`;
-  })
- }
- 
- const cards = document.querySelectorAll(".card");
-const leftbtn = document.getElementById("leftbtn");
-const rightbtn = document.getElementById("rightbtn");
- 
+    const buttons = document.querySelectorAll(".regionBtn");
+    const regionMap = {
+  delhi: ["Delhi", "Noida", "Gurugram"],
+  noida: ["Noida", "Delhi", "Ghaziabad"],
+  gurugram: ["Gurugram", "Delhi", "Noida"],
+  bareilly: ["Bareilly"],
+  meerut :["Meerut"],
+  haridwar :["Haridwar"],
+  dehradun:["Dehradun"],
+  hyderabad :["Hyderabad" , "Gachibowli"],
+  all: ["all"]
+};
 
-let counter = 0;
 
-cards.forEach((card, index) => {
-  card.style.left = `${index * 100}%`;
-});
+ function filterByRegion(region) {
 
-const slideCards = () => {
-  cards.forEach((card) => {
-    card.style.transform = `translateX(-${counter * 100}%)`;
+  region = region.toLowerCase();
+
+  let filtered;
+
+  if (region === "all") {
+    filtered = regionColleges;
+  } else {
+    const nearby = regionMap[region] || [];
+
+    filtered = regionColleges.filter(college =>
+      nearby.includes(college.region)
+    );
+  }
+
+  renderColleges(filtered);
+}
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+
+    buttons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    filterByRegion(btn.dataset.region);
   });
-};
+});
 
-const goRight = () => {
-  counter = (counter + 1) % cards.length;   // 🔥 loop forward
-  slideCards();
-};
-
-const goLeft = () => {
-  counter = (counter - 1 + cards.length) % cards.length; // 🔥 loop backward
-  slideCards();
-};
-
-rightbtn.onclick = () => {
-leftbtn.classList.remove("hidden")
-goRight();
-} 
-leftbtn.onclick = goLeft;
+filterByRegion("bareilly")
 
 
- const cads = document.querySelectorAll(".cad");
-const left = document.getElementById("left");
-const right = document.getElementById("right");
  
 
-let counte = 0;
 
-cads.forEach((cad, indexx) => {
-  cad.style.left = `${indexx * 100}%`;
-});
+    function initSlider() {
 
-const slideCads = () => {
-  cads.forEach((cad) => {
-    cad.style.transform = `translateX(-${counte * 100}%)`;
+  const cards = document.querySelectorAll(".slidee");
+  let counter = 0;
+
+  cards.forEach((card, index) => {
+    card.style.left = `${index * 100}%`;
   });
-};
 
-const goRightt = () => {
-  counte = (counte + 1) % cads.length;   // 🔥 loop forward
-  slideCads();
-};
+  document.getElementById("prevv").onclick = () => {
+    counter--;
+    if(counter < 0) counter = cards.length - 1;
+    slide();
+  };
 
-const goLeftt = () => {
-  counte = (counte - 1 + cads.length) % cads.length; // 🔥 loop backward
-  slideCads();
-};
+  document.getElementById("nextt").onclick = () => {
+    document.getElementById("prevv").classList.remove("hidden")
+    counter++;
+    if(counter >= cards.length) counter = 0;
+    slide();
+  };
 
-right.onclick = () => {
-left.classList.remove("hidden")
-goRightt();
-} 
-left.onclick = goLeftt;
+  function slide(){
+    cards.forEach(card => {
+      card.style.transform = `translateX(-${counter * 100}%)`;
+    });
+  }
+}
 
 
-});
+    const cards = document.querySelectorAll(".card");
+    const leftbtn = document.getElementById("leftbtn");
+    const rightbtn = document.getElementById("rightbtn");
+
+
+    let counter = 0;
+
+    cards.forEach((card, index) => {
+      card.style.left = `${index * 100}%`;
+    });
+
+    const slideCards = () => {
+      cards.forEach((card) => {
+        card.style.transform = `translateX(-${counter * 100}%)`;
+      });
+    };
+
+    const goRight = () => {
+      counter = (counter + 1) % cards.length;   // 🔥 loop forward
+      slideCards();
+    };
+
+    const goLeft = () => {
+      counter = (counter - 1 + cards.length) % cards.length; // 🔥 loop backward
+      slideCards();
+    };
+
+    rightbtn.onclick = () => {
+      leftbtn.classList.remove("hidden")
+      goRight();
+    }
+    leftbtn.onclick = goLeft;
+
+
+    const cads = document.querySelectorAll(".cad");
+    const left = document.getElementById("left");
+    const right = document.getElementById("right");
+
+
+    let counte = 0;
+
+    cads.forEach((cad, indexx) => {
+      cad.style.left = `${indexx * 100}%`;
+    });
+
+    const slideCads = () => {
+      cads.forEach((cad) => {
+        cad.style.transform = `translateX(-${counte * 100}%)`;
+      });
+    };
+
+    const goRightt = () => {
+      counte = (counte + 1) % cads.length;   // 🔥 loop forward
+      slideCads();
+    };
+
+    const goLeftt = () => {
+      counte = (counte - 1 + cads.length) % cads.length; // 🔥 loop backward
+      slideCads();
+    };
+
+    right.onclick = () => {
+      left.classList.remove("hidden")
+      goRightt();
+    }
+    left.onclick = goLeftt;
+
+
+  });
 
 
 

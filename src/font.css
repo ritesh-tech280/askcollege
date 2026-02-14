@@ -53,5 +53,11 @@ html, body {
   transform: rotate(180deg);
 }
 
+
+.regionBtn.active {
+  background-color: #155dfc;
+  color: white;
+  border: 1px solid #155dfc;
+}
  
  

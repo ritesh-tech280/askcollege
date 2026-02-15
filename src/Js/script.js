@@ -531,7 +531,7 @@ school
   haridwar :["Haridwar"],
   dehradun:["Dehradun"],
   hyderabad :["Hyderabad" , "Gachibowli"],
-  all: ["all"]
+  all: ["all" , "Delhi"]
 };
 
 

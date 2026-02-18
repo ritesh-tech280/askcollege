@@ -6,8 +6,8 @@ const slug = params.get("slug");
 
 async function loadCourse() {
 
-  const courses = await fetch("./data/courses.json").then(r => r.json());
-  const colleges = await fetch("./data/colleges.json").then(r => r.json());
+  const courses = await fetch("./Data/courses.json").then(r => r.json());
+  const colleges = await fetch("./Data/colleges.json").then(r => r.json());
 
   const course = courses.find(c => c.slug === slug);
 

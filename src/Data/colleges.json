@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "slug": "iit-delhi",
+    "name": "IIT Delhi",
+    "rating": 4.9,
+    "fees": "₹2.2L/yr",
+    "location": "Delhi",
+    "type": "Gov",
+    "logo": "./assets/images/Indian_Institute_of_Technology_Delhi_Logo.webp",
+    "courses": ["btech-computer-science"]
+  },
+  {
+    "id": 2,
+    "slug": "iit-mumbai",
+    "name": "IIT Bombay",
+    "rating": 4.7,
+    "fees": "₹1.8L/yr",
+    "location": "Mumbai",
+    "type": "Gov",
+    "logo": "./assets/images/Indian_Institute_of_Technology_Bombay_Logo.webp",
+    "courses": ["btech-computer-science"]
+  },
+  {
+  "id": 3,
+  "slug": "iit-madras",
+  "name": "IIT Madras",
+  "rating": 4.8,
+  "fees": "₹2.1L/yr",
+  "location": "Chennai, Tamil Nadu",
+  "type": "Gov",
+  "logo": "./assets/images/IIT_Madras_Logo.webp",
+  "courses": [
+    "btech-computer-science",
+    "btech-mechanical",
+    "btech-electrical"
+  ]
+},
+{
+  "id": 4,
+  "slug": "iit-kanpur",
+  "name": "IIT Kanpur",
+  "rating": 4.7,
+  "fees": "₹2.05L/yr",
+  "location": "Kanpur, Uttar Pradesh",
+  "type": "Gov",
+  "logo": "./assets/images/indian-institute-of-technology-kanpur-log.webp",
+  "courses": [
+    "btech-computer-science",
+    "btech-mechanical",
+    "btech-electrical"
+  ]
+} 
+
+
+,
+{
+  "id": 101,
+  "slug": "iim-ahmedabad",
+  "name": "IIM Ahmedabad",
+  "rating": 4.9,
+  "fees": "₹24–25L (total)",
+  "location": "Ahmedabad",
+  "type": "Gov",
+  "logo": "./assets/images/IIM_Ahemedabad.webp",
+  "courses": ["mba"]
+},
+{
+  "id": 102,
+  "slug": "iim-bangalore",
+  "name": "IIM Bangalore",
+  "rating": 4.8,
+  "fees": "₹24–25L (total)",
+  "location": "Bangalore",
+  "type": "Gov",
+  "logo": "./assets/images/IIM-Banglore.webp",
+  "courses": ["mba"]
+},
+{
+  "id": 103,
+  "slug": "iim-calcutta",
+  "name": "IIM Calcutta",
+  "rating": 4.8,
+  "fees": "₹23–24L (total)",
+  "location": "Kolkata",
+  "type": "Gov",
+  "logo": "./assets/images/IIM-Culcatta.webp",
+  "courses": ["mba"]
+},
+{
+  "id": 104,
+  "slug": "fms-delhi",
+  "name": "FMS Delhi",
+  "rating": 4.7,
+  "fees": "₹2L (total)",
+  "location": "Delhi",
+  "type": "Gov",
+  "logo": "./assets/images/FMS-Delhi.webp",
+  "courses": ["mba"]
+}
+
+
+
+]

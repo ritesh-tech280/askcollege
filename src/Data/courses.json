@@ -1,0 +1,316 @@
+[
+  {
+    "slug": "btech-computer-science",
+    "title": "B.Tech in Computer Science & Engineering",
+    "description": "B.Tech in Computer Science & Engineering is a 4-year undergraduate program that focuses on the design, development, and management of software systems and computing technologies. Students learn programming, data structures, algorithms, artificial intelligence, cloud computing, cybersecurity, and modern web & mobile development. The course combines strong theoretical foundations with practical projects, internships, and industry exposure to prepare students for real-world technology careers.",
+    "fees": "₹1–2.5L/year",
+    "career": ["Software Engineer",
+    "Frontend Developer",
+    "Backend Developer",
+    "Full Stack Developer",
+    "Mobile App Developer",
+    "Data Scientist",
+    "Machine Learning Engineer",
+    "AI Engineer",
+    "Cloud Engineer",
+    "DevOps Engineer",
+    "Cybersecurity Analyst",
+    "Game Developer",
+    "Blockchain Developer",
+    "System Administrator",
+    "IT Consultant"]
+  },
+  {
+    "slug": "mba",
+    "title": "MBA (Master of Business Administration)",
+    "description": "Master of Business Administration (MBA) is a 2-year postgraduate program focused on business management, leadership, and strategic decision-making. The course equips students with knowledge of finance, marketing, operations, human resources, analytics, and entrepreneurship. Through case studies, internships, live projects, and industry interactions, students develop managerial, analytical, and communication skills required to lead organizations and build successful businesses in both corporate and startup environments.",
+    "fees": "₹1–3L/year",
+    "career": [ "Business Analyst",
+    "Marketing Manager",
+    "Financial Analyst",
+    "HR Manager",
+    "Operations Manager",
+    "Product Manager",
+    "Project Manager",
+    "Sales Manager",
+    "Management Consultant",
+    "Investment Banker",
+    "Digital Marketing Manager",
+    "Supply Chain Manager",
+    "Entrepreneur / Startup Founder",
+    "Strategy Manager",
+    "Corporate Executive"]
+  },
+  {
+  "slug": "btech-electronics",
+  "title": "B.Tech in Electronics & Communication Engineering",
+  "description": "B.Tech in Electronics & Communication Engineering (ECE) is a 4-year undergraduate engineering program that focuses on electronic devices, communication systems, signal processing, embedded systems, VLSI design, robotics, and IoT technologies. Students learn how modern communication networks, mobile systems, satellites, semiconductors, and smart devices work. The course blends hardware + software skills with practical labs, industry projects, and internships to prepare students for core electronics as well as IT careers.",
+  "fees": "₹1–2.5L/year",
+  "career": [
+    "Electronics Engineer",
+    "Communication Engineer",
+    "Embedded Systems Engineer",
+    "VLSI Design Engineer",
+    "IoT Engineer",
+    "Robotics Engineer",
+    "Signal Processing Engineer",
+    "Telecom Engineer",
+    "Network Engineer",
+    "Hardware Engineer",
+    "PCB Design Engineer",
+    "Control Systems Engineer",
+    "Automation Engineer",
+    "Software Developer",
+    "Public Sector Engineer (PSU/ISRO/DRDO)"
+  ]
+} ,
+{
+  "slug": "btech-cybersecurity",
+  "title": "B.Tech in Cybersecurity",
+  "description": "B.Tech in Cybersecurity is a 4-year undergraduate engineering program focused on protecting computer systems, networks, and digital infrastructure from cyber threats. Students learn ethical hacking, cryptography, network security, digital forensics, cloud security, and penetration testing. The course combines strong programming skills with real-world security labs and industry projects to prepare students for high-demand security roles across IT, banking, and government sectors.",
+  "fees": "₹1–2.5L/year",
+  "career": [
+    "Cybersecurity Analyst",
+    "Ethical Hacker",
+    "Penetration Tester",
+    "Security Engineer",
+    "SOC Analyst",
+    "Digital Forensics Expert",
+    "Cloud Security Engineer",
+    "Security Consultant",
+    "Information Security Manager",
+    "Malware Analyst",
+    "Risk & Compliance Officer",
+    "Government Cyber Cell Officer"
+  ]
+},
+{
+  "slug": "mba",
+  "title": "MBA (Master of Business Administration)",
+  "description": "MBA is a 2-year postgraduate program that develops leadership, management, and business decision-making skills. Students study marketing, finance, human resources, operations, strategy, and entrepreneurship. The program focuses on real-world case studies, internships, and industry exposure to prepare students for managerial and executive roles across corporate sectors and startups.",
+  "fees": "₹2–25L (total)",
+  "career": [
+    "Business Manager",
+    "Marketing Manager",
+    "Finance Manager",
+    "HR Manager",
+    "Operations Manager",
+    "Product Manager",
+    "Consultant",
+    "Investment Banker",
+    "Data/Business Analyst",
+    "Entrepreneur",
+    "Supply Chain Manager",
+    "Corporate Strategist"
+  ]
+} ,
+{
+  "slug": "bba",
+  "title": "BBA (Bachelor of Business Administration)",
+  "description": "BBA is a 3-year undergraduate management program that introduces students to business fundamentals such as marketing, finance, accounting, human resources, and entrepreneurship. It builds communication, leadership, and analytical skills and serves as a strong foundation for careers in management or higher studies like MBA.",
+  "fees": "₹50K–2L/year",
+  "career": [
+    "Business Executive",
+    "Marketing Executive",
+    "Sales Manager",
+    "HR Executive",
+    "Operations Executive",
+    "Customer Relationship Manager",
+    "Digital Marketing Specialist",
+    "Startup Founder",
+    "Business Analyst",
+    "MBA Aspirant"
+  ]
+},
+{
+  "slug": "bcom",
+  "title": "B.Com (Bachelor of Commerce)",
+  "description": "B.Com is a 3-year undergraduate commerce program that focuses on accounting, taxation, finance, economics, and business laws. It prepares students for careers in banking, finance, corporate accounting, and government services. The course is also a strong base for professional qualifications like CA, CS, CMA, and MBA.",
+  "fees": "₹20K–1L/year",
+  "career": [
+    "Accountant",
+    "Tax Consultant",
+    "Auditor",
+    "Bank Officer",
+    "Financial Analyst",
+    "Investment Advisor",
+    "Business Executive",
+    "Government Officer",
+    "CA/CS/CMA Professional",
+    "Entrepreneur"
+  ]
+} ,
+{
+  "slug": "bca",
+  "title": "BCA (Bachelor of Computer Applications)",
+  "description": "BCA is a 3-year undergraduate program focused on computer applications, software development, and IT fundamentals. Students learn programming languages, databases, web development, mobile apps, networking, cloud computing, and software engineering. The course is ideal for students who want to enter the IT industry without pursuing traditional engineering and also serves as a strong foundation for MCA or advanced tech careers.",
+  "fees": "₹40K–1.5L/year",
+  "career": [
+    "Software Developer",
+    "Web Developer",
+    "Frontend Developer",
+    "Backend Developer",
+    "Full Stack Developer",
+    "Mobile App Developer",
+    "Database Administrator",
+    "System Administrator",
+    "Cloud Support Engineer",
+    "QA Engineer",
+    "IT Support Engineer",
+    "MCA Aspirant"
+  ]
+} ,
+{
+  "slug": "bsc-data-science",
+  "title": "B.Sc in Data Science",
+  "description": "B.Sc in Data Science is a 3-year undergraduate program that focuses on data analysis, statistics, machine learning, artificial intelligence, and big data technologies. Students learn Python, SQL, visualization tools, predictive modeling, and real-world analytics projects. The program prepares students to extract insights from large datasets and supports careers in AI, analytics, and business intelligence.",
+  "fees": "₹60K–2L/year",
+  "career": [
+    "Data Analyst",
+    "Data Scientist",
+    "Machine Learning Engineer",
+    "Business Intelligence Analyst",
+    "AI Engineer",
+    "Statistician",
+    "Data Engineer",
+    "Research Analyst",
+    "Quantitative Analyst",
+    "Product Analyst",
+    "Analytics Consultant"
+  ]
+},
+{
+  "slug": "bsc-biotechnology",
+  "title": "B.Sc in Biotechnology",
+  "description": "B.Sc in Biotechnology is a 3-year life sciences program that combines biology and technology to develop products and solutions in healthcare, agriculture, and pharmaceuticals. Students study genetics, microbiology, molecular biology, bioinformatics, and laboratory techniques. The course emphasizes research, lab experiments, and innovation for careers in biotech, pharma, and research industries.",
+  "fees": "₹50K–1.8L/year",
+  "career": [
+    "Biotechnologist",
+    "Research Scientist",
+    "Clinical Research Associate",
+    "Microbiologist",
+    "Lab Technician",
+    "Quality Control Officer",
+    "Pharma Analyst",
+    "Genetic Counselor",
+    "Food Safety Officer",
+    "Bioinformatics Analyst",
+    "Higher Studies (M.Sc/PhD)"
+  ]
+},
+{
+  "slug": "mbbs",
+  "title": "MBBS (Bachelor of Medicine & Bachelor of Surgery)",
+  "description": "MBBS is a 5.5-year undergraduate medical degree program that trains students to become professional doctors. The course covers human anatomy, physiology, pathology, pharmacology, surgery, and clinical practice. Students gain hands-on hospital training, patient care experience, and internships. After graduation, students can practice as doctors or pursue specializations like MD/MS.",
+  "fees": "₹1L–35L/year",
+  "career": [
+    "General Physician",
+    "Surgeon",
+    "Medical Officer",
+    "Hospital Doctor",
+    "Public Health Officer",
+    "Clinical Researcher",
+    "MD/MS Specialist",
+    "Medical Consultant",
+    "Emergency Care Doctor",
+    "Healthcare Administrator"
+  ]
+},
+{
+  "slug": "bams",
+  "title": "BAMS (Bachelor of Ayurvedic Medicine and Surgery)",
+  "description": "BAMS is a 5.5-year undergraduate degree that focuses on Ayurveda, India’s traditional system of medicine. Students study herbal medicine, natural therapies, human anatomy, pathology, and modern medical practices. The program combines classical Ayurvedic knowledge with clinical training to treat patients using holistic and natural methods.",
+  "fees": "₹60K–3L/year",
+  "career": [
+    "Ayurvedic Doctor",
+    "Clinical Practitioner",
+    "Herbal Research Scientist",
+    "Wellness Consultant",
+    "Panchakarma Specialist",
+    "Medical Officer (AYUSH)",
+    "Pharma Executive (Ayurveda)",
+    "Health & Lifestyle Coach",
+    "Hospital Administrator",
+    "Private Clinic Owner"
+  ]
+},
+{
+  "slug": "bsc-nursing",
+  "title": "B.Sc Nursing",
+  "description": "B.Sc Nursing is a 4-year undergraduate healthcare program that prepares students for professional nursing and patient care. Students learn anatomy, physiology, nutrition, community health, emergency care, and hospital management. The course includes extensive hospital training and internships, making graduates highly employable in hospitals and healthcare centers.",
+  "fees": "₹40K–2L/year",
+  "career": [
+    "Registered Nurse",
+    "ICU Nurse",
+    "Staff Nurse",
+    "Community Health Nurse",
+    "Operation Theatre Nurse",
+    "Nurse Educator",
+    "Clinical Instructor",
+    "Hospital Administrator",
+    "Military Nurse",
+    "Overseas Nurse (UK/Canada/Gulf)"
+  ]
+} ,
+{
+  "slug": "ba-economics",
+  "title": "BA in Economics",
+  "description": "BA in Economics is a 3-year undergraduate program that studies how money, markets, and resources are managed in society. Students learn microeconomics, macroeconomics, statistics, econometrics, public policy, banking, and finance. The course builds strong analytical, mathematical, and problem-solving skills and prepares students for careers in finance, government, analytics, and higher studies like MA Economics, MBA, or civil services.",
+  "fees": "₹15K–80K/year",
+  "career": [
+    "Economist",
+    "Financial Analyst",
+    "Data Analyst",
+    "Bank Officer",
+    "Policy Analyst",
+    "Investment Analyst",
+    "Market Research Analyst",
+    "Civil Services Officer",
+    "Business Consultant",
+    "Research Associate"
+  ]
+},
+{
+  "slug": "ba-psychology",
+  "title": "BA in Psychology",
+  "description": "BA in Psychology is a 3-year undergraduate course that focuses on understanding human behavior, emotions, and mental processes. Students study cognitive psychology, social psychology, clinical psychology, counseling, and research methods. The program prepares students to work in mental health, education, human resources, and counseling fields or pursue higher studies like MA/MSc Psychology.",
+  "fees": "₹20K–1L/year",
+  "career": [
+    "Counselor",
+    "Clinical Psychologist (after PG)",
+    "HR Executive",
+    "School Psychologist",
+    "Behavioral Therapist",
+    "Career Counselor",
+    "Social Worker",
+    "Research Assistant",
+    "Mental Health Officer",
+    "NGO Professional"
+  ]
+},
+{
+  "slug": "ba-journalism",
+  "title": "BA in Journalism & Mass Communication",
+  "description": "BA in Journalism & Mass Communication is a 3-year undergraduate program that trains students in news reporting, digital media, advertising, public relations, filmmaking, and content creation. Students learn storytelling, video production, editing, and media ethics. The course prepares graduates for careers in television, newspapers, digital platforms, and media agencies.",
+  "fees": "₹40K–1.5L/year",
+  "career": [
+    "Journalist",
+    "News Reporter",
+    "Content Writer",
+    "News Anchor",
+    "Digital Media Manager",
+    "Public Relations Officer",
+    "Social Media Manager",
+    "Video Editor",
+    "Script Writer",
+    "Media Producer"
+  ]
+}
+
+
+
+
+
+
+]
+

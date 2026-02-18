@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AskCollege - Compare Colleges, Fees, Courses & NIRF Rankings</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+</head>
+
+<body class="max-w-screen   overflow-y-auto">
+    <header class="h-16 w-full bg-white shadow-sm fixed top-0 z-50">
+        <nav class="w-[90%] flex h-full justify-between items-center m-auto">
+
+            <!-- LEFT: Hamburger + Logo -->
+            <div class="flex items-center gap-4">
+
+                <!-- Hamburger (mobile + tab only) -->
+                <button id="menuBtn" class="md:hidden -ml-2 text-2xl text-gray-700">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <!-- Logo -->
+                <h1 class="text-2xl font-extrabold text-blue-600">AskCollege</h1>
+            </div>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-10">
+                <li class="nav-link"><a href="#colleges">Colleges</a></li>
+                <li class="nav-link"><a href="#course">Courses</a></li>
+                <li class="nav-link"><a href="#">Exams</a></li>
+                <li class="nav-link"><a href="#regionCol">Cities</a></li>
+            </ul>
+
+            <!-- Buttons -->
+            <div class="hidden md:flex gap-2">
+                <button id="loginUp" class="p-2 text-sm text-blue-500 hover:underline">Login</button>
+                <button id="signUp"
+                    class="p-2 text-sm font-bold border-2 border-blue-500 text-blue-600 rounded-lg hover:bg-blue-50">
+                    Join for Free
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+   
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="fixed top-0 left-0 h-full overflow-hidden w-screen bg-white shadow-xl
+  transform -translate-x-full transition-transform duration-300 z-50">
+
+        <!-- Sidebar Header -->
+        <div class="h-16 flex items-center justify-between px-4 border-b  border-[#deeafc]">
+            <h2 class="text-2xl font-extrabold text-blue-600">AskCollege</h2>
+            <button id="closeBtn" class="text-xl text-[#6b7280]">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <!-- Sidebar Content -->
+        <nav class="p-4   space-y-3 text-sm text-black shadow-md  ">
+
+            <!-- Colleges -->
+            <div class="sidebar-item">
+                <button class="sidebar-btn">
+                    <span>Explore Colleges</span>
+                    <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                </button>
+
+                <ul class="sidebar-dropdown">
+                    <li><a href="#" class="sidebar-link">Top Colleges</a></li>
+                    <li><a href="#" class="sidebar-link">MBA Colleges</a></li>
+                    <li><a href="#" class="sidebar-link">Engineering Colleges</a></li>
+                    <li><a href="#" class="sidebar-link">Medical Colleges</a></li>
+                </ul>
+            </div>
+            <!-- ======= Courses ======= -->
+            <div class="sidebar-item">
+                <button class="sidebar-btn">
+                    <span>Explore Courses</span>
+                    <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                </button>
+
+                <ul class="sidebar-dropdown">
+                    <li><a href="#" class="sidebar-link">MBA</a></li>
+                    <li><a href="#" class="sidebar-link">B.Tech</a></li>
+                    <li><a href="#" class="sidebar-link">Design</a></li>
+                    <li><a href="#" class="sidebar-link">Law</a></li>
+                </ul>
+            </div>
+
+            <!-- Exams -->
+            <div class="sidebar-item">
+                <button class="sidebar-btn">
+                    <span>Explore Exams</span>
+                    <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <ul class="sidebar-dropdown space-y-2">
+                    <li><a href="#" class="sidebar-link">CAT</a></li>
+                    <li><a href="#" class="sidebar-link">JEE</a></li>
+                    <li><a href="#" class="sidebar-link">GATE</a></li>
+                    <li><a href="#" class="sidebar-link">NEET</a></li>
+                </ul>
+            </div>
+
+            <!-- Cities -->
+            <div class="sidebar-item">
+                <button class="sidebar-btn">
+                    <span>Explore Courses</span>
+                    <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <ul class="sidebar-dropdown space-y-2">
+                    <li><a href="#" class="sidebar-link">Delhi</a></li>
+                    <li><a href="#" class="sidebar-link">Mumbai</a></li>
+                    <li><a href="#" class="sidebar-link">Bangalore</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-item">
+                <button class="sidebar-btn">
+                    <span>Popular Courses</span>
+                    <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <ul class="sidebar-dropdown space-y-2">
+                    <li><a href="#" class="sidebar-link">MBA</a></li>
+                    <li><a href="#" class="sidebar-link">B.Tech</a></li>
+                    <li><a href="#" class="sidebar-link">BBA</a></li>
+                    <li><a href="#" class="sidebar-link">BCA</a></li>
+                </ul>
+            </div>
+
+            <div class="for border-t border-[#deeafc]  py-6">
+                <ul class="space-y-6 ">
+                    <li><a href="">For Businesses</a></li>
+                    <li><a href="">For University</a></li>
+                    <li><a href="">For Government</a></li>
+                </ul>
+            </div>
+            <div class="for border-t border-[#deeafc]  py-6">
+                <ul class="space-y-6 ">
+                    <li><a href="">For Businesses</a></li>
+                    <li><a href="">For University</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="flex fixed bottom-0 gap-3 flex-col items-center justify-center w-screen h-44 bg-[#f0f6ff]">
+            <button id="signUpMobile" class="p-2 py-3 w-[80%] text-sm font-bold    bg-blue-600 text-white rounded-lg hover:bg-blue-50">
+                Join for Free
+            </button>
+            <button id="loginMobile"
+                class="p-2 py-3 w-[80%] text-sm border bg-white border-blue-500 text-blue-500 rounded-lg">Login</button>
+        </div>
+
+    </aside>
+
+
+       <aside id="sidebarWithLogin" class="fixed top-0 left-0 h-full overflow-hidden w-screen bg-white shadow-xl
+  transform -translate-x-full transition-transform duration-300 z-50">
+
+        <!-- Sidebar Header -->
+        <div class="h-16 flex items-center justify-end px-4 border-b  border-[#deeafc]">
+            <h2 class="text-2xl  w-1/2 ml-7 mx-auto font-extrabold text-blue-600">AskCollege</h2>
+            <button id="closeBtnMobile" class="text-xl text-[#6b7280]">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+           <div id="loginModalPhone" class="fixed    flex items-center justify-center z-50">
+
+  <!-- Modal -->
+  <div class="bg-white w-[95%] max-w-md p-8 relative">
+
+ 
+   
+
+    <!-- Title -->
+    <h2 class="text-[18px] font-semibold mb-2">
+      Log in or create account
+    </h2>
+
+    <p class="text-gray-500 text-sm mb-6">
+      Learn on your own time from top universities and colleges.
+    </p>
+
+    <!-- Email Input -->
+    <label class="block text-sm font-medium mb-2">
+      Email <span class="text-red-500">*</span>
+    </label>
+
+    <input
+      type="email"
+      placeholder="name@email.com"
+      class="w-full border border-blue-300 rounded-lg px-4 text-[14px] py-3 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-600"
+    />
+
+    <!-- Continue Button -->
+    <button class="w-full bg-blue-700 text-[13px] hover:bg-blue-800 text-white font-medium py-3 rounded-lg transition mb-5">
+      Continue
+    </button>
+
+    <!-- Divider -->
+    <div class="flex items-center my-4">
+      <hr class="grow border-gray-300">
+      <span class="px-3 text-gray-400 text-sm">or</span>
+      <hr class="grow border-gray-300">
+    </div>
+
+    <!-- Social Buttons -->
+    <div class="space-y-3">
+
+      <button class="w-full border rounded-lg py-3 pl-5 pr-10
+        flex items-center justify-between
+       gap-3 hover:bg-gray-50">
+        <img src="./assets/images/Google__G__logo.webp" class="w-5 h-5">
+       <span class="max-w-1/2 mx-auto text-[13px] font-medium "> Continue with Google </span>
+      </button>
+
+      <button class="w-full border rounded-lg py-3 pl-5 pr-10 flex items-center justify-between gap-3 hover:bg-gray-50">
+        <img src="./assets/images/Facebook_logo.webp" class="w-5 h-5">
+       <span class="max-w-3/4 mx-auto text-[13px] font-medium"> Continue with Facebook </span>
+      </button>
+
+     <button class="w-full border rounded-lg py-3 pl-5 pr-10 flex items-center justify-between gap-3 hover:bg-gray-50">
+        <img src="./assets/images/Apple_logo_black.webp" class="w-5 h-5">
+       <span class="max-w-3/4 mx-auto text-[13px] font-medium"> Continue with Apple</span>
+      </button>
+
+    </div>
+
+    <!-- Organization Link -->
+    <p class="text-left mt-5">
+      <a href="#" class="text-blue-600 text-[13px]  underline">
+        Sign up with your organization
+      </a>
+    </p>
+
+    <!-- Footer text -->
+    <p class="text-xs text-gray-500 mt-6 leading-relaxed">
+      I accept AskCollege's <span class="underline">Terms of Use</span> and
+      <span class="underline">Privacy Notice</span>.
+    </p>
+
+  </div>
+</div>
+                  
+      
+
+    </aside>
+
+
+
+
+
+               <!----------------- Login Section ------------------  -->
+               <!-- Overlay -->
+<div id="loginModal" class="fixed hidden  inset-0 bg-black/40 flex items-center justify-center z-50">
+
+  <!-- Modal -->
+  <div class="bg-white w-[95%] max-w-md rounded-2xl shadow-2xl p-8 relative">
+
+    <!-- Close Button -->
+    <button id="closeModel" class="absolute top-4 right-4 text-gray-500 hover:text-black text-xl">
+      ✕
+    </button>
+
+    <!-- Title -->
+    <h2 class="text-2xl font-semibold mb-2">
+      Log in or create account
+    </h2>
+
+    <p class="text-gray-500 text-sm mb-6">
+      Learn on your own time from top universities and colleges.
+    </p>
+
+    <!-- Email Input -->
+    <label class="block text-sm font-medium mb-2">
+      Email <span class="text-red-500">*</span>
+    </label>
+
+    <input
+      type="email"
+      placeholder="name@email.com"
+      class="w-full border border-blue-300 rounded-lg px-4 text-[14px] py-3 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-600"
+    />
+
+    <!-- Continue Button -->
+    <button class="w-full bg-blue-700 text-[13px] hover:bg-blue-800 text-white font-medium py-3 rounded-lg transition mb-5">
+      Continue
+    </button>
+
+    <!-- Divider -->
+    <div class="flex items-center my-4">
+      <hr class="grow border-gray-300">
+      <span class="px-3 text-gray-400 text-sm">or</span>
+      <hr class="grow border-gray-300">
+    </div>
+
+    <!-- Social Buttons -->
+    <div class="space-y-3">
+
+      <button class="w-full border rounded-lg py-3 pl-5 pr-10
+        flex items-center justify-between
+       gap-3 hover:bg-gray-50">
+        <img src="https://www.svgrepo.com/show/475656/google-color.svg" class="w-5 h-5">
+       <span class="max-w-1/2 mx-auto text-[13px] font-medium "> Continue with Google </span>
+      </button>
+
+      <button class="w-full border rounded-lg py-3 pl-5 pr-10 flex items-center justify-between gap-3 hover:bg-gray-50">
+        <img src="https://www.svgrepo.com/show/475647/facebook-color.svg" class="w-5 h-5">
+       <span class="max-w-3/4 mx-auto text-[13px] font-medium"> Continue with Facebook </span>
+      </button>
+
+     <button class="w-full border rounded-lg py-3 pl-5 pr-10 flex items-center justify-between gap-3 hover:bg-gray-50">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" class="w-5 h-5">
+       <span class="max-w-3/4 mx-auto text-[13px] font-medium"> Continue with Apple</span>
+      </button>
+
+    </div>
+
+    <!-- Organization Link -->
+    <p class="text-left mt-5">
+      <a href="#" class="text-blue-600 text-[13px]  underline">
+        Sign up with your organization
+      </a>
+    </p>
+
+    <!-- Footer text -->
+    <p class="text-xs text-gray-500 mt-6 leading-relaxed">
+      I accept AskCollege's <span class="underline">Terms of Use</span> and
+      <span class="underline">Privacy Notice</span>.
+    </p>
+
+  </div>
+</div>
+
+   <section class="max-w-7xl mx-auto px-4 py-8 mt-25">
+
+  <h1 id="title" class="text-2xl font-bold"></h1>
+  <p id="description" class="text-gray-600 mt-2"></p>
+
+  <h2 class="mt-6 font-semibold">Career Outcomes</h2>
+  <ul id="career" class="list-disc ml-5 text-sm mt-2"></ul>
+
+  <h2 class="mt-6 font-semibold">Fees Range</h2>
+  <p id="fees" class="text-blue-600 font-medium"></p>
+
+  <h2 class="mt-8 font-semibold">Top Colleges</h2>
+  <div id="collegeGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4"></div>
+
+</section>
+
+<script src="./js/course.js"></script>
+
+    
+
+
+    <!-- ================= FOOTER ================= -->
+  <footer class="bg-[#f2f5fa]  mt-1 text-gray-700">
+
+  <div class="max-w-[95%] mx-auto px-6 py-16">
+
+    <!-- ===== GRID ===== -->
+    <div class="grid gap-10
+                grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+
+      <!-- Brand -->
+      <div class="lg:col-span-2">
+        <h2 class="text-2xl font-bold text-blue-600">AskCollege</h2>
+        <p class="mt-4 text-sm text-gray-500 leading-relaxed max-w-sm">
+          Discover the right courses, colleges and career paths.
+          Compare fees, rankings and placements across India.
+        </p>
+      </div>
+
+
+      <!-- Popular Courses -->
+      <div>
+        <h3 class="font-semibold text-gray-900 mb-4">Popular Courses</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/courses/btech" class="hover:text-blue-600">B.Tech</a></li>
+          <li><a href="/courses/mba" class="hover:text-blue-600">MBA</a></li>
+          <li><a href="/courses/bca" class="hover:text-blue-600">BCA</a></li>
+          <li><a href="/courses/mbbs" class="hover:text-blue-600">MBBS</a></li>
+          <li><a href="/courses" class="hover:text-blue-600">All Courses</a></li>
+        </ul>
+      </div>
+
+
+      <!-- Explore -->
+      <div>
+        <h3 class="font-semibold text-gray-900 mb-4">Explore</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-blue-600">Colleges</a></li>
+          <li><a href="#" class="hover:text-blue-600">Exams</a></li>
+          <li><a href="#" class="hover:text-blue-600">Rankings</a></li>
+          <li><a href="#" class="hover:text-blue-600">Scholarships</a></li>
+          <li><a href="#" class="hover:text-blue-600">Career Guidance</a></li>
+        </ul>
+      </div>
+
+
+      <!-- Company -->
+      <div>
+        <h3 class="font-semibold text-gray-900 mb-4">Company</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/about" class="hover:text-blue-600">About</a></li>
+          <li><a href="/contact" class="hover:text-blue-600">Contact</a></li>
+          <li><a href="#" class="hover:text-blue-600">Careers</a></li>
+          <li><a href="#" class="hover:text-blue-600">Blog</a></li>
+          <li><a href="#" class="hover:text-blue-600">Partners</a></li>
+        </ul>
+      </div>
+
+
+      <!-- Legal -->
+      <div>
+        <h3 class="font-semibold text-gray-900 mb-4">Legal</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/privacy" class="hover:text-blue-600">Privacy</a></li>
+          <li><a href="/terms" class="hover:text-blue-600">Terms</a></li>
+          <li><a href="/sitemap" class="hover:text-blue-600">Sitemap</a></li>
+          <li><a href="#" class="hover:text-blue-600">Help Center</a></li>
+          <li><a href="#" class="hover:text-blue-600">FAQs</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+
+    <!-- ===== Divider ===== -->
+    <div class="border-t border-gray-300 mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+
+      <p class="text-sm text-gray-500">
+        © 2026 AskCollege. All rights reserved.
+      </p>
+
+      <!-- Social -->
+      <div class="flex gap-8  text-[25px] text-gray-500">
+        <a href="#" class="hover:text-blue-600"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="hover:text-blue-600"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="hover:text-blue-600"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="hover:text-blue-600"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+
+
+    <script src="./Js/script.js"></script>
+
+</body>
+
+</html>

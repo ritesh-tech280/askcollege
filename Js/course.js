@@ -33,7 +33,7 @@ async function loadCourse() {
 
   related.forEach(col => {
     grid.innerHTML += `
-      <a href="/college.html?slug=${col.slug}"
+      <a href="./college.html?slug=${col.slug}"
          class="block bg-white border rounded-lg shadow-sm p-3
                 flex gap-3 items-start hover:shadow-md transition">
 

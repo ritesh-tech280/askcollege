@@ -1,5 +1,5 @@
-console.log("js Loaded")
-
+ 
+document.addEventListener("DOMContentLoaded" , () =>  {
 
 const params = new URLSearchParams(window.location.search);
 const slug = params.get("slug");
@@ -63,4 +63,8 @@ async function loadCourse() {
   });
 }
 
-loadCourse();
+ 
+      loadCourse();   // homepage
+  
+
+})

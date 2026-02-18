@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const signUpBtn = document.getElementById("signUp");
   const loginUp = document.getElementById("loginUp");
   const closeModel = document.getElementById("closeModel");
-  console.log(loginModel, signUpBtn, closeModel)
+  
 
   signUpBtn.addEventListener("click", () => {
     loginModel.classList.remove("hidden");

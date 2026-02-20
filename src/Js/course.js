@@ -30,7 +30,7 @@ async function loadCourse() {
   const related = colleges.filter(col =>
     col.courses.includes(slug)
   );
-
+  grid.innerHTML = "";
   related.forEach(col => {
     grid.innerHTML += `
       <a href="./college.html?slug=${col.slug}"
@@ -62,9 +62,5 @@ async function loadCourse() {
     `;
   });
 }
-
- 
       loadCourse();   // homepage
-  
-
 })

@@ -8,7 +8,9 @@
     "location": "Delhi",
     "type": "Gov",
     "logo": "./assets/images/Indian_Institute_of_Technology_Delhi_Logo.webp",
-    "courses": ["btech-computer-science"]
+    "courses": ["btech-computer-science",
+   "btech-cybersecurity",
+"btech-electronics"]
   },
   {
     "id": 2,
@@ -19,7 +21,9 @@
     "location": "Mumbai",
     "type": "Gov",
     "logo": "./assets/images/Indian_Institute_of_Technology_Bombay_Logo.webp",
-    "courses": ["btech-computer-science"]
+    "courses": ["btech-computer-science",
+  "btech-cybersecurity",
+"btech-electronics"]
   },
   {
   "id": 3,
@@ -32,8 +36,8 @@
   "logo": "./assets/images/IIT_Madras_Logo.webp",
   "courses": [
     "btech-computer-science",
-    "btech-mechanical",
-    "btech-electrical"
+     "btech-cybersecurity",
+"btech-electronics"
   ]
 },
 {
@@ -47,8 +51,8 @@
   "logo": "./assets/images/indian-institute-of-technology-kanpur-log.webp",
   "courses": [
     "btech-computer-science",
-    "btech-mechanical",
-    "btech-electrical"
+     "btech-cybersecurity",
+"btech-electronics"
   ]
 } 
 
@@ -97,8 +101,329 @@
   "type": "Gov",
   "logo": "./assets/images/FMS-Delhi.webp",
   "courses": ["mba"]
-}
+} ,
 
 
 
+  {
+    "id": 41,
+    "slug": "ims-noida",
+    "name": "Institute of Management Studies Noida",
+    "rating": 4.3,
+    "fees": "₹1.2L–1.5L/yr",
+    "location": "Noida",
+    "type": "Pvt",
+    "logo": "./assets/images/Instituteofmanagementstudies.webp",
+    "courses": ["bba"]
+  },
+  {
+    "id": 42,
+    "slug": "its-engineering-college-greater-noida",
+    "name": "ITS Institute of Technology and Science",
+    "rating": 4.2,
+    "fees": "₹1L–1.3L/yr",
+    "location": "Greater Noida",
+    "type": "Pvt",
+    "logo": "./assets/images/its.webp",
+    "courses": ["bba"]
+  },
+  {
+    "id": 43,
+    "slug": "sanskriti-university-mathura",
+    "name": "Sanskriti University",
+    "rating": 4.1,
+    "fees": "₹80K–1.1L/yr",
+    "location": "Mathura",
+    "type": "Pvt",
+    "logo": "./assets/images/sanskrit.webp",
+    "courses": ["bba"]
+  },
+  {
+    "id": 44,
+    "slug": "rajshree-institute-bareilly",
+    "name": "Rajshree Institute of Management & Technology",
+    "rating": 4.0,
+    "fees": "₹70K–1L/yr",
+    "location": "Bareilly",
+    "type": "Pvt",
+    "logo": "./assets/images/rajshree.webp",
+    "courses": ["bba" , "ba", "ba-economics", "ba-psychology"]
+  },
+
+
+
+  {
+    "id": 51,
+    "slug": "hindu-college-delhi",
+    "name": "Hindu College, University of Delhi",
+    "rating": 4.8,
+    "fees": "₹20K–25K/yr",
+    "location": "Delhi",
+    "type": "Gov",
+    "logo": "./assets/images/hindu-college.webp",
+    "courses": ["bcom"]
+  },
+  {
+    "id": 52,
+    "slug": "nm-commerce-mumbai",
+    "name": "Narsee Monjee College of Commerce & Economics",
+    "rating": 4.6,
+    "fees": "₹30K–40K/yr",
+    "location": "Mumbai",
+    "type": "Gov",
+    "logo": "./assets/images/nm-commerce.webp",
+    "courses": ["bcom"]
+  },
+  {
+    "id": 53,
+    "slug": "hansraj-college-delhi",
+    "name": "Hansraj College, University of Delhi",
+    "rating": 4.7,
+    "fees": "₹18K–25K/yr",
+    "location": "Delhi",
+    "type": "Gov",
+    "logo": "./assets/images/hansraj.webp",
+    "courses": ["bcom" , "ba", "ba-economics", "ba-psychology"]
+  },
+  {
+    "id": 54,
+    "slug": "christ-university-bangalore",
+    "name": "Christ University",
+    "rating": 4.6,
+    "fees": "₹1.2L–1.6L/yr",
+    "location": "Bangalore",
+    "type": "Pvt",
+    "logo": "./assets/images/christ.webp",
+    "courses": ["bcom", "bba", "mba" ,"ba", "ba-economics", "ba-psychology"]
+  },
+  {
+    "id": 55,
+    "slug": "lpu-punjab",
+    "name": "LPU - Lovely Professional University",
+    "rating": 4.3,
+    "fees": "₹1L–1.4L/yr",
+    "location": "Punjab",
+    "type": "Pvt",
+    "logo": "./assets/images/lpu.webp",
+    "courses": ["bcom", "bba", "mba" , "bca", "bsc-biotechnology"]
+  },
+
+
+
+
+
+   {
+    "id": 61,
+    "slug": "amity-university-noida",
+    "name": "Amity University Noida",
+    "rating": 4.4,
+    "fees": "₹1.3L–1.6L/yr",
+    "location": "Noida",
+    "type": "Pvt",
+    "logo": "./assets/images/amity_noida_logo.webp",
+    "courses": ["bca", "bsc-data-science", "bsc-biotechnology"]
+  },
+  {
+    "id": 62,
+    "slug": "amity-university-gurugram",
+    "name": "Amity University Gurugram",
+    "rating": 4.2,
+    "fees": "₹1.2L–1.5L/yr",
+    "location": "Gurugram",
+    "type": "Pvt",
+    "logo": "./assets/images/amity-gurugram.webp",
+    "courses": ["bca" , "bsc-data-science", "bsc-biotechnology"]
+  },
+  {
+    "id": 63,
+    "slug": "chandigarh-university",
+    "name": "Chandigarh University",
+    "rating": 4.5,
+    "fees": "₹1.1L–1.4L/yr",
+    "location": "Punjab",
+    "type": "Pvt",
+    "logo": "./assets/images/cu.webp",
+    "courses": ["bca" , "bsc-biotechnology"]
+  } ,
+
+
+
+
+  {
+    "id": 71,
+    "slug": "christ-university-bangalore",
+    "name": "Christ University",
+    "rating": 4.6,
+    "fees": "₹1.4L–1.8L/yr",
+    "location": "Bangalore",
+    "type": "Pvt",
+    "logo": "./assets/images/christ.webp",
+    "courses": ["bsc-data-science", "bca", "bba", "mba"]
+  },
+  {
+    "id": 72,
+    "slug": "chandigarh-university",
+    "name": "Chandigarh University",
+    "rating": 4.5,
+    "fees": "₹1.1L–1.5L/yr",
+    "location": "Punjab",
+    "type": "Pvt",
+    "logo": "./assets/images/cu.webp",
+    "courses": ["bsc-data-science", "bca", "btech-computer-science"]
+  },
+  {
+    "id": 73,
+    "slug": "vit-vellore",
+    "name": "Vellore Institute of Technology",
+    "rating": 4.7,
+    "fees": "₹1.8L–2.2L/yr",
+    "location": "Vellore",
+    "type": "Pvt",
+    "logo": "./assets/images/vit.webp",
+    "courses": ["bsc-data-science", "btech-computer-science", "btech-cybersecurity"]
+  },
+  {
+    "id": 75,
+    "slug": "lpu-punjab",
+    "name": "LPU - Lovely Professional University",
+    "rating": 4.3,
+    "fees": "₹1.1L–1.4L/yr",
+    "location": "Punjab",
+    "type": "Pvt",
+    "logo": "./assets/images/lpu.webp",
+    "courses": ["bsc-data-science", "bca", "bba", "bcom"]
+  },
+
+
+
+    {
+    "id": 121,
+    "slug": "mjpru-nursing",
+    "name": "MJPRU Nursing Colleges",
+    "rating": 4.1,
+    "fees": "₹40K–70K/yr",
+    "location": "Bareilly",
+    "type": "Govt",
+    "logo": "./assets/images/mjpru.webp",
+    "courses": ["bsc-nursing" ]
+  },
+  {
+    "id": 122,
+    "slug": "aiims-delhi-nursing",
+    "name": "AIIMS Delhi",
+    "rating": 4.9,
+    "fees": "₹6K/yr",
+    "location": "New Delhi",
+    "type": "Govt",
+    "logo": "./assets/images/aiims.webp",
+    "courses": ["bsc-nursing", "mbbs", "bams"]
+  },
+  {
+    "id": 123,
+    "slug": "integral-university-lucknow",
+    "name": "Integral University",
+    "rating": 4.2,
+    "fees": "₹90K–1.1L/yr",
+    "location": "Lucknow",
+    "type": "Pvt",
+    "logo": "./assets/images/integral.webp",
+    "courses": ["bsc-nursing"]
+  } ,
+
+
+
+
+   {
+    "id": 111,
+    "slug": "mjpru-ayurveda",
+    "name": "MJPRU Ayurveda Colleges",
+    "rating": 4.0,
+    "fees": "₹35K–70K/yr",
+    "location": "Bareilly",
+    "type": "Govt",
+    "logo": "./assets/images/mjpru.webp",
+    "courses": ["bams"]
+  },
+  {
+    "id": 112,
+    "slug": "nia-jaipur",
+    "name": "National Institute of Ayurveda",
+    "rating": 4.6,
+    "fees": "₹45K/yr",
+    "location": "Jaipur",
+    "type": "Govt",
+    "logo": "./assets/images/NIA.webp",
+    "courses": ["bams"]
+  },
+  {
+    "id": 113,
+    "slug": "rama-ayurvedic-kanpur",
+    "name": "Rama Ayurvedic Medical College",
+    "rating": 4.1,
+    "fees": "₹1.8L/yr",
+    "location": "Kanpur",
+    "type": "Pvt",
+    "logo": "./assets/images/rama.webp",
+    "courses": ["bams"]
+  },
+
+
+
+  {
+    "id": 101,
+    "slug": "mjpru-bareilly",
+    "name": "MJPRU (Affiliated Medical Colleges)",
+    "rating": 4.1,
+    "fees": "₹30K–80K/yr",
+    "location": "Bareilly",
+    "type": "Govt",
+    "logo": "./assets/images/mjpru.webp",
+    "courses": ["mbbs", "bams", "bsc-nursing"]
+  },
+  {
+    "id": 102,
+    "slug": "kgmu-lucknow",
+    "name": "King George's Medical University",
+    "rating": 4.8,
+    "fees": "₹55K/yr",
+    "location": "Lucknow",
+    "type": "Govt",
+    "logo": "./assets/images/kgmu.png",
+    "courses": ["mbbs"]
+  },
+  {
+    "id": 103,
+    "slug": "subharti-meerut",
+    "name": "Subharti Medical College",
+    "rating": 4.2,
+    "fees": "₹11L–12L/yr",
+    "location": "Meerut",
+    "type": "Pvt",
+    "logo": "./assets/images/subharti.webp",
+    "courses": ["mbbs", "bsc-nursing"]
+  },
+  {
+    "id": 104,
+    "slug": "sharda-university",
+    "name": "Sharda University",
+    "rating": 4.3,
+    "fees": "₹12L–13L/yr",
+    "location": "Greater Noida",
+    "type": "Pvt",
+    "logo": "./assets/images/sharda.webp",
+    "courses": ["mbbs", "bsc-nursing"]
+  } ,
+
+
+  {
+    "id": 204,
+    "slug": "lucknow-university",
+    "name": "University of Lucknow",
+    "rating": 4.3,
+    "fees": "₹12K–18K/yr",
+    "location": "Lucknow",
+    "type": "Govt",
+    "logo": "./assets/images/lu.webp",
+    "courses": ["ba", "ba-economics", "ba-psychology"]
+  }
 ]
